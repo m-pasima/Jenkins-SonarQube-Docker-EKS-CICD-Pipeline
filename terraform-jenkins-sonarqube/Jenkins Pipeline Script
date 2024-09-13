@@ -18,7 +18,7 @@ pipeline{
          }
          stage('Checkout from Git'){
              steps{
-                 git branch: 'main', url: 'https://github.com/Ashfaque-9x/a-swiggy-clone.git'
+                 git branch: 'main', url: 'https://github.com/m-pasima/Jenkins-SonarQube-Docker-EKS-CICD-Pipeline.git'
              }
          }
          stage("Sonarqube Analysis "){
