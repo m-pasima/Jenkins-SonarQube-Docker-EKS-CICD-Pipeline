@@ -1,7 +1,7 @@
 resource "aws_instance" "web_instance" {
   ami                    = "ami-01ec84b284795cbc7"    #ubuntu  
   instance_type          = "t2.large"
-  key_name               = "kikivy"              
+  key_name               = "key"              
   vpc_security_group_ids = [aws_security_group.Jenkins-SG.id]
   user_data              = templatefile("./install.sh", {})
 
